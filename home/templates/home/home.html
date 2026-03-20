@@ -1,0 +1,84 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="templatemo-nav">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">SPAM EMAIL DETECTION SYSTEM</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#contact">REGISTER</a></li>
+                <li><a href="/log">LOGIN</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="home" class="parallax-section">
+        <div class="parallax-bg" data-speed="0.5" style="background-image: url('{% static 'parallax-bg-01.jpg' %}')"></div>
+        <div class="parallax-overlay"></div>
+        <div class="section-content">
+            <h1 class="section-title hero-title">WELCOME TO OUR WEBSITE</h1>
+            <p class="section-subtitle caps">WE CREATED SAFETY WEBSITE FOR USERS</p>
+            <a href="#about" class="btn-scroll">EXPLORE</a>
+        </div>
+    </section>
+    <section id="services" class="parallax-section">
+        <div class="parallax-bg" data-speed="0.55" style="background-image: url('{% static 'parallax-bg-03.jpg' %}')"></div>
+        <div class="parallax-overlay overlay-dark"></div>
+        <div class="section-content">
+            <h2 class="section-title">WHAT WE DO</h2>
+            <p class="section-subtitle caps">DESIGN &middot; DEVELOP &middot; DELIVER</p>
+            <div class="services-grid">
+                <div class="service-item">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <rect x="4" y="4" width="32" height="32" rx="2" stroke="white" stroke-width="1.5"/>
+                            <line x1="4" y1="14" x2="36" y2="14" stroke="white" stroke-width="1.5"/>
+                            <circle cx="10" cy="9" r="2" fill="white"/>
+                            <circle cx="16" cy="9" r="2" fill="white"/>
+                        </svg>
+                    </div>
+                    <h3>WEB DESIGN</h3>
+                    <p class="caps">CLEAN LAYOUTS BUILT FOR IMPACT AND CLARITY</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <path d="M20 4L36 12V28L20 36L4 28V12L20 4Z" stroke="white" stroke-width="1.5"/>
+                            <path d="M20 36V20" stroke="white" stroke-width="1.5"/>
+                            <path d="M36 12L20 20" stroke="white" stroke-width="1.5"/>
+                            <path d="M4 12L20 20" stroke="white" stroke-width="1.5"/>
+                        </svg>
+                    </div>
+                    <h3>BRANDING</h3>
+                    <p class="caps">IDENTITIES THAT RESONATE AND ENDURE</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <rect x="8" y="2" width="24" height="36" rx="3" stroke="white" stroke-width="1.5"/>
+                            <line x1="8" y1="8" x2="32" y2="8" stroke="white" stroke-width="1.5"/>
+                            <line x1="8" y1="32" x2="32" y2="32" stroke="white" stroke-width="1.5"/>
+                            <circle cx="20" cy="35" r="1.5" fill="white"/>
+                        </svg>
+                    </div>
+                    <h3>DEVELOPMENT</h3>
+                    <p class="caps">RESPONSIVE CODE THAT PERFORMS EVERYWHERE</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

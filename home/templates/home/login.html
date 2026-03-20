@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Starter - Free HTML CSS Template</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'templatemo-parallax-starter.css' %}">
+    <!--
+
+TemplateMo 612 Parallax Starter
+
+https://templatemo.com/tm-612-parallax-starter
+
+-->
+<script>
+    let error="{{ error|escapejs }}"
+    if (error){
+        alert(error)
+    }
+</script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="templatemo-nav">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">SPAM EMAIL DETECTION SYSTEM</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="/home" class="active">HOME</a></li>
+                <li><a href="{% url 'home' %}#contact">REGISTER</a></li>
+            </ul>
+        </div>
+    </nav>
+<!-- Section 4: Gallery -->
+<form method="POST" action="/log" class="contact-form">
+    {% csrf_token %}
+    <section id="gallery" class="parallax-section">
+        <div class="parallax-bg" data-speed="0.5" style="background-image: url('{% static 'parallax-bg-05.jpg' %}')"></div>
+        <div class="parallax-overlay"></div>
+        <div class="section-content">
+            <h2 class="section-title">LOGIN</h2>
+            <div class="card">
+                <div class="contact-form" style="display:flex; align-items:center; justify-content:center;">
+                    <input type="text" placeholder="Enter username" name="username1" style="width:500px; font-weight:bold;">
+                    <input type="password" placeholder="Enter Password" name="password1" style="width:500px; font-weight:bold;">
+                </div>
+                <div class="foot">
+                    <button type="submit" class="btn-submit b">Login</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</form>
+</body>
+</html>
